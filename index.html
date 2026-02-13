@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RioEventos Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>RioEventos Tracker</h1>
+        <p>Descubra os melhores eventos acontecendo no Rio de Janeiro!</p>
+    </header>
+
+    <main>
+        <section id="filters">
+            <input type="text" id="searchInput" placeholder="Buscar eventos ou bairros...">
+            <select id="categoryFilter">
+                <option value="all">Todas as Categorias</option>
+                <option value="musica">Música</option>
+                <option value="arte">Arte</option>
+                <option value="esporte">Esporte</option>
+                <option value="gastronomia">Gastronomia</option>
+                <option value="cultura">Cultura</option>
+            </select>
+            <button id="applyFilters">Aplicar Filtros</button>
+        </section>
+
+        <section id="map-container">
+            <div id="map"></div>
+        </section>
+
+        <section id="event-list">
+            <h2>Próximos Eventos</h2>
+            <div id="events-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RioEventos Tracker. Desenvolvido por Alessandro Pires.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

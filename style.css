@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    /* Azul do Rio */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+#filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    /* Para ser responsivo */
+}
+
+#filters input,
+#filters select,
+#filters button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#filters button {
+    background-color: #28a745;
+    /* Verde */
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#filters button:hover {
+    background-color: #218838;
+}
+
+#map-container {
+    margin-bottom: 20px;
+    height: 400px;
+    /* Altura fixa para o mapa */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Garante que o mapa não "vaze" */
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+#events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Grid responsivo */
+    gap: 20px;
+}
+
+.event-card {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.event-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
+}
